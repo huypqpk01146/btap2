@@ -1,0 +1,23 @@
+<br/>
+<div class="row" >
+    <table border="1" id="myTable">
+    <thead>
+      <tr>
+        <th>Id sản phẩm</th>
+        <th>Tên sản phẩm</th>
+        <th>Giá</th>
+        <th>Desc</th>
+        <th>Chức năng</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <th>{{product.id}}</th>
+        <th>{{product.name}}</th>
+        <th>{{product.price}}</th>
+        <th>{{product.desc}}</th>
+        <th><input type="button" value="Delete" onclick="deleteRow(this)"></th>
+      </tr>
+    </tbody>
+  </table>
+</div>
